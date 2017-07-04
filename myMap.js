@@ -3,6 +3,20 @@
 function myMap(arr, callback) {
 
 //  CODE INSIDE HERE   //
+  //  What are our inputs? call back function
+  // What is our output? a new array, same length as array that was mapped
+  // What happens on each loop? a new array element is created in the new array
+  // What does the callback function do? whatever plus produces a new element
+  // What gets passed into our callback function? i.e. what arguments does it receive? (it's inputs)
+  //    Where does it come from?
+  //    How do we know what to name it?
+
+  var mappedArr = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    mappedArr[i] = callback(arr[i], i, arr);
+  }
+  return mappedArr;
 
 }
 

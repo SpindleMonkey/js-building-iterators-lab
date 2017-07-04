@@ -4,6 +4,13 @@ function myEach(arr, callback) {
   
   //  CODE INSIDE HERE   //
 
+
+  //  myEach calls callback for each element of arr
+  for (var i = 0; i < arr.length; i++) {
+    //console.log("hej");
+    callback(arr[i], i, arr);
+  }
+
 }
 
 /*
