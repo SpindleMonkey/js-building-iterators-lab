@@ -7,8 +7,9 @@ function myFilter(arr, callback) {
     if (callback(arr[i], i, arr)) {
       filteredResults.push(arr[i]);
     }
-    console.log(i + ": " + filteredResults);
+    //console.log(i + ": " + filteredResults);
   }
+  return filteredResults;
 }
 
 
